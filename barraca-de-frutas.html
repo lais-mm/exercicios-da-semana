@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <script>
+
+            var saladaDeFrutas = [];
+            var adicionarMaisFrutas = true;
+
+            alert('Bem vindo a barraquinha de frutas');
+            var nome = prompt('digite seu nome');
+            document.write('Bem-vindo' + nome);
+            
+            var fruta = prompt('Escolha a fruta');
+            saladaDeFrutas.push(fruta);
+
+            while(adicionarMaisFrutas){
+                var resposta = prompt('Deseja adicionar mais frutas - sim ou não');
+
+                if (resposta.toLowerCase() == 'sim') {
+                    fruta = prompt('Escolha uma fruta');
+                    saladaDeFrutas.push(fruta);
+                }else{
+                    adicionarMaisFrutas = false;
+                }
+            }
+
+            document.write('Sua salada de frutas está pronta <br> <br>' )
+            document.write('Frutas:  <br>')
+
+            for(var i = 0; i <saladaDeFrutas.length; i++){
+               document.write(saladaDeFrutas[i] + '<br>');
+            }
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+    <script>
+
+    var anos = prompt('Digite há quantos anos você estuda programação?');
+
+    function experiencia(anos) {
+     switch (true) {
+         case anos > 0 && anos <= 1:
+            anos = document.write('Iniciante');
+        break;
+        case anos > 1 && anos <= 3:
+            anos = document.write('Intermediario');
+        break;
+        case anos > 3 && anos <= 6:
+            anos = document.write('Avançado');
+        break;
+        case anos > 7:
+            anos = document.write('Jedi');
+        break;
+        }
+    }
+
+    
+   experiencia(anos);
+    
+    </script>
+    </body>
+
+</html>    

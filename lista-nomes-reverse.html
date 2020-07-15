@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+        
+        <script>
+        //usuario digita varios nomes que são mostrados na tela em ordem inversa
+            var nomes = [];
+            var adicionarNome = true;
+
+            
+            var nome = prompt('Digite um nome');
+            nomes.push(nome);
+
+            while(adicionarNome){
+                var resposta = prompt('Deseja adicionar mais um nome? - sim ou não');
+
+                if (resposta.toLowerCase() == 'sim') {
+                    nome = prompt('Digite mais um nome');
+                    nomes.push(nome);
+                }else{
+                    adicionarNome = false;
+                }
+            }
+
+            var nomeRev = nomes.reverse();
+            document.write(`Os nomes digitados na ordem inversa são ${nomeRev}`);
+        
+        </script>
+        
+    </body>
+</html>
